@@ -8,7 +8,7 @@ def get_birthdays_per_week(users):
     for info in users:
         if info["birthday"].day not in range(datetime.now().day, datetime.now().day + 7):
             continue
-        if date.isoweekday(info["birthday"]) <= 5:
+        if info["birthday"].isoweekday() <= 5:
             week_days[info["birthday"].strftime("%A")].append(info["name"])
         else:
             week_days["Monday"].append(info["name"])
@@ -26,7 +26,7 @@ users = [{"name": "Jill", "birthday": datetime(2022, 10, 7)},
          {"name": "James", "birthday": datetime(2022, 10, 29)},
          {"name": "Lu", "birthday": datetime(2022, 10, 3)},
          {"name": "Lisa", "birthday": datetime(2022, 10, 8)},
-         {"name": "Ronald", "birthday": datetime(2022, 10, 6)},
+         {"name": "Ronald", "birthday": datetime(2022, 10, 30)},
          {"name": "Kerry", "birthday": datetime(2022, 10, 23)}]
 
 

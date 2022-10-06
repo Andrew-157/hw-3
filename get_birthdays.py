@@ -1,4 +1,4 @@
-from datetime import date, datetime
+from datetime import datetime
 
 
 def get_birthdays_per_week(users):
@@ -70,14 +70,14 @@ def get_birthdays_per_week(users):
         print("Friday: " + a)
 
 
-users = [{"name": "Jill", "birthday": datetime(2022, 10, 10)},
+users = [{"name": "Jill", "birthday": datetime(2022, 10, 7)},
          {"name": "Karen", "birthday": datetime(2022, 10, 11)},
-         {"name": "Simon", "birthday": datetime(2022, 10, 11)},
-         {"name": "Luis", "birthday": datetime(2022, 10, 11)},
-         {"name": "Grew", "birthday": datetime(2022, 10, 11)},
+         {"name": "Simon", "birthday": datetime(2022, 10, 12)},
+         {"name": "Luis", "birthday": datetime(2022, 10, 9)},
+         {"name": "Grew", "birthday": datetime(2022, 10, 10)},
          {"name": "James", "birthday": datetime(2022, 10, 13)},
-         {"name": "Lu", "birthday": datetime(2022, 10, 12)},
-         {"name": "Lisa", "birthday": datetime(2022, 10, 14)},
+         {"name": "Lu", "birthday": datetime(2022, 10, 3)},
+         {"name": "Lisa", "birthday": datetime(2022, 10, 8)},
          {"name": "Ronald", "birthday": datetime(2022, 10, 6)},
          {"name": "Kerry", "birthday": datetime(2022, 10, 23)}]
 
